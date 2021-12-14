@@ -8,9 +8,6 @@ import parsers.jaxb.XMLParser;
 import static org.testng.AssertJUnit.assertEquals;
 
 public class testCartSum extends DefaultTest{
-//    private static final String keyword = "телевізори";
-//    private static final String brandName = "Philips";
-//    private static final int priceValidation = 62855;
     String keywordFromXML = parsers.jaxb.XMLParser.unmarshall().getKeyword();
     String brandNameFromXML = parsers.jaxb.XMLParser.unmarshall().getBrandName();
     String priceValidationFromXML = XMLParser.unmarshall().getPriceValidation();

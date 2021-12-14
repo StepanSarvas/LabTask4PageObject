@@ -1,4 +1,3 @@
-import EntryData.EntryData;
 import RozetkaPages.MainPage;
 import RozetkaPages.ProductPage;
 import RozetkaPages.SearchResultPage;
