@@ -1,7 +1,3 @@
-import org.omg.CORBA.PUBLIC_MEMBER;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import parsers.jaxb.XMLParser;
 

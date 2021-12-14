@@ -1,6 +1,5 @@
 package RozetkaPages;
 
-import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,11 +25,6 @@ public class DefaultPage {
     public void loadPageWaiter (long holdTime){
         new WebDriverWait(driver, holdTime).until(
                 webDriver -> ((JavascriptExecutor)webDriver).executeScript("return document.readyState").equals("complete"));
-    }
-
-    public void loadAjaxWaiter(long holdTime){
-        new WebDriverWait(driver, holdTime).until(
-                webDriver -> ((JavascriptExecutor)webDriver).executeScript("return window.jQuery != undefined && jQuery.active == 0;"));
     }
 
     public void loadElementWaiter(long holdTime, WebElement element){
