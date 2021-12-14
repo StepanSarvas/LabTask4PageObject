@@ -7,12 +7,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class XMLParser {
-    public static DataModel unmarshall() {
+    public static parsers.jaxb.DataModel unmarshall() {
         JAXBContext context = null;
         try {
-            context = JAXBContext.newInstance(DataModel.class);
-            return (DataModel) context.createUnmarshaller()
-                    .unmarshal(new FileReader("src/main/resources/forparsing/data.xml"));
+            context = JAXBContext.newInstance(parsers.jaxb.DataModel.class);
+            return (parsers.jaxb.DataModel) context.createUnmarshaller()
+                    .unmarshal(new FileReader("src\\main\\resources\\data.xml"));
         } catch (JAXBException | FileNotFoundException e) {
             e.printStackTrace();
         }
